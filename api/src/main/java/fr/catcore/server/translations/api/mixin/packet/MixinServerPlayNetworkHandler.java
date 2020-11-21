@@ -43,9 +43,9 @@ public class MixinServerPlayNetworkHandler {
             return this.modifyBossBar(packet);
         } else if (packet instanceof TitleS2CPacket) {
             return this.modifyTitle(packet);
-        } else if (packet instanceof InventoryS2CPacket) {
+        } /*else if (packet instanceof InventoryS2CPacket) {
             return this.modifyInventory(packet);
-        }
+        }*/
 
         return packet;
     }
